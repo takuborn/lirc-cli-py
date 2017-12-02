@@ -80,6 +80,8 @@ class LircClient():
         """ command SEND_ONCE """
         if repeats > 1:
             bufRepeats = str(repeats)
+        else:
+            bufRepeats = ''
             
         return self.__send(' '.join(('SEND_ONCE', remote, button, bufRepeats)))
 
