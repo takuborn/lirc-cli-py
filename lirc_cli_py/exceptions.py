@@ -1,0 +1,2 @@
+class LircClientException(Exception):
+    pass
